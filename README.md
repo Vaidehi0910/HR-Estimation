@@ -1,4 +1,6 @@
 # HR-Estimation
+![HR-Estimation-github](https://github.com/user-attachments/assets/d4df1ce7-c119-4061-ae7e-9a56e3b0e6d4)
+![HR-Estimation-github-mask](https://github.com/user-attachments/assets/45b81361-733f-458e-9995-88487692a15e)
 
 # Abstract
 - Heart Rate (HR) is one of the most important Physiological parameter and a vital indicator of people‘s physiological state
