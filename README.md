@@ -5,9 +5,10 @@
 - A non-contact based system to measure Heart Rate: real-time application using camera
 - Principal: extract heart rate information from facial skin color variation caused by blood circulation 
 - Application: monitoring drivers‘ physiological state
+- Contribution: Checks if the person is wearing mask or not. If yes, use forehead area, otherwise use forehead + lower face areas to extarct information
 
 # Methods 
-- Detect face, align and get ROI using facial landmarks using mediapipe
+- Detect face and mask, align and get ROI using facial landmarks using mediapipe
 - Apply band pass filter with fl = 0.8 Hz and fh = 3 Hz, which are 48 and 180 bpm respectively
 - Average color value of ROI in each frame is calculate pushed to a data buffer which is 150 in length
 - FFT the data buffer. The highest peak is Heart rate 
@@ -23,6 +24,7 @@ python GUI.py
 ```
 
 # Reference
+- Base of the project: https://github.com/habom2310/Heart-rate-measurement-using-camera/tree/master
 - Real Time Heart Rate Monitoring From Facial RGB Color Video Using Webcam by H. Rahman, M.U. Ahmed, S. Begum, P. Funk
 - Remote Monitoring of Heart Rate using Multispectral Imaging in Group 2, 18-551, Spring 2015 by Michael Kellman Carnegie (Mellon University), Sophia Zikanova (Carnegie Mellon University) and Bryan Phipps (Carnegie Mellon University)
 - Non-contact, automated cardiac pulse measurements using video imaging and blind source separation by Ming-Zher Poh, Daniel J. McDuff, and Rosalind W. Picard
